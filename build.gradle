@@ -19,6 +19,8 @@ allprojects {
     }
 
     dependencies {
+        // Apache Commons
+        implementation 'org.apache.commons:commons-compress:1.21'
         // Logging
         // // Compression
         implementation 'org.tukaani:xz:1.9'
