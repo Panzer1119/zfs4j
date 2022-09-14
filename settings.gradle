@@ -1,3 +1,4 @@
 rootProject.name = 'zfs4j'
 include 'zfs4j-model'
+include 'zfs4j-core'
 
