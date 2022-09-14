@@ -5,22 +5,28 @@ plugins {
 group = 'de.codemakers.zfs4j'
 version = '0.1.0-1-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-}
+allprojects {
 
-ext {
-    jupiter_version = '5.9.0'
-}
+    apply plugin: 'java'
 
-dependencies {
-    // Testing
-    testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiter_version}"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jupiter_version}"
-}
+    repositories {
+        mavenCentral()
+    }
 
-test {
-    useJUnitPlatform()
+    ext {
+        jupiter_version = '5.9.0'
+    }
+
+    dependencies {
+        // Testing
+        testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiter_version}"
+        testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${jupiter_version}"
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
 }
 
 tasks.named('wrapper') {
