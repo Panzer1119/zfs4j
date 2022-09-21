@@ -10,7 +10,7 @@ repositories {
 }
 
 ext {
-    jupiter_version = '5.9.0'
+    jupiter_version = '5.9.1'
 }
 
 dependencies {
